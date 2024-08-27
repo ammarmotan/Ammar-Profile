@@ -144,7 +144,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             /* background-color: var(--banner-bg); */
-            background: url(/images/web-ban-new.jpg);
+            background: url(../images/web-ban-new.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
@@ -351,7 +351,7 @@
             display: flex;
             /* justify-content: center; */
             /* background-color: var(--banner-img); */
-            background: url(/images/full-pic.jpeg);
+            background: url(../images/full-pic.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
