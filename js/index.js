@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
             sentenceIndex = (sentenceIndex + 1) % sentences.length;
             typingSpeed = 500; // Pause before typing next sentence
         }
-  
+        
         setTimeout(type, typingSpeed);
     }
     
@@ -49,11 +49,13 @@ function toggleDarkMode() {
     }
 }
 // dark //
+
+
 // navbar//
 $(document).ready(function () {
     $(window).scroll(function () {
-      if ($(window).scrollTop() > 0) {
-        $("nav").css("background-color", "white");
+        if ($(window).scrollTop() > 0) {
+            $("nav").css("background-color", "white");
         $(".navbar-brand").css("color", "black");
         $("nav").css("border-color", "white");
         $("nav").css("box-shadow", "var(--box-shadow)");
@@ -67,7 +69,35 @@ $(document).ready(function () {
         $("nav").css("box-shadow", "none");
         $(".nav-link").css("color", "white");
         $(".navbar-toggler").css("color", "white");
-      }
+    }
+});
+});
+// navbar//
+// pagination //
+let currentpage = 1;
+const totalpage = 2;
+
+function showpage(page){
+  for(let i = 1; i <= totalpage; i++){
+    const pageElement = document.getElementById(`content-${i}`);
+    const paginationItem = document.getElementById(`page-${i}`);
+    if(i === page) {
+      pageElement.style.display = 'block';
+      pageElement.style.transition = "ease in out";
+      paginationItem.classList.add('active');
+    } else{
+      pageElement.style.display = 'none';
+      paginationItem.classList.remove('active');
+    }
+  }
+}
+for(let i = 1; i <= totalpage; i++){
+    const paginationItem = document.getElementById(`page-${i}`);
+    paginationItem.addEventListener('click', () => {
+      currentpage = i;
+      showpage(currentpage);
     });
-  });
-  // navbar//
+  }
+  showpage(currentpage);
+// showpage(currentpage);
+// pagination //
