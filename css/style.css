@@ -65,7 +65,7 @@
             border: none;
             cursor: pointer;
             font-size: 24px;
-            color: var(--text-color);
+            color: white;
             padding-left: 15px;
         }
 
@@ -456,7 +456,7 @@
             box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
             width: 150px;
         }
-
+        
         @media (max-width:800px) {
             .about h2:before {
                 display: none;
@@ -465,19 +465,19 @@
             .about-card {
                 flex-wrap: wrap;
             }
-
+            
             .about-card .img {
                 margin: auto;
             }
         }
-
+        
         /* about */
-
+        
         /* service */
         .service {
             margin-top: 100px;
         }
-
+        
         .service h2 {
             position: relative;
             z-index: 1;
@@ -504,7 +504,7 @@
             font-weight: 600;
             font-style: normal;
         }
-
+        
         .parent {
             position: relative;
             display: flex;
@@ -515,7 +515,7 @@
             height: 3px;
             margin-bottom: 80px;
         }
-
+        
         .child {
             background-color: var(--bold-red);
             width: 70px;
@@ -598,11 +598,17 @@
         /* service */
         
         /* skill */
-        .skilll {
-            margin-top: 100px;
-        }
-        
-        .skilll h2 {
+        .skills-section {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            background: transparent;
+            padding: 40px;
+            border-radius: 10px;
+            margin: auto;
+          }
+          
+          .skills-section h2{
             position: relative;
             z-index: 1;
             color: var(--text-color);
@@ -613,10 +619,9 @@
             font-weight: 600;
             font-style: normal;
             padding-top: 50px;
-        }
-        
-        .skilll h2::before {
-            content: "MY SKILLS";
+          }
+          .skills-section h2::before {
+            content: "SKILLS";
             color: rgba(135, 135, 135, 0.2);
             top: 95%;
             left: 50%;
@@ -627,25 +632,58 @@
             font-family: "Poppins", sans-serif;
             font-weight: 600;
             font-style: normal;
-        }
-        
-        .parent {
-            position: relative;
+          }
+          
+          .skills-container {
             display: flex;
-            justify-content: center;
-            margin: auto;
-            width: 140px;
-            background-color: #afafaf;
-            height: 3px;
-            margin-bottom: 80px;
-        }
-        
-        .child {
-            background-color: var(--bold-red);
-            width: 70px;
-            border: 3px var(--bold-green);
-        }
-        
+            flex-direction: column;
+            gap: 20px;
+          }
+          
+          .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          
+          .skill h3 {
+            flex: 1;
+            font-size: 18px;
+            color: var(--text-color);
+          }
+          
+          .skill-bar {
+            flex: 4;
+            height: 10px;
+            background: #eee;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+          }
+          
+          .progress {
+            height: 100%;
+            background: var(--bold-red);
+            border-radius: 5px;
+            transition: width 0.5s ease;
+          }
+          
+          .skill span {
+            flex: 0.5;
+            font-size: 14px;
+            color: var(--bold-red);
+          }
+          
+          @media (max-width: 600px) {
+            .skill h3, .skill span {
+              font-size: 12px;
+            }
+          
+            .progress {
+              height: 8px;
+            }
+          }
         /* skill */
         
         /* project */
@@ -793,7 +831,7 @@
             
         }
         /* project */
-
+        
         
         /* blog */
         .blog h2 {
@@ -861,95 +899,147 @@
             height: 200px;
             border-radius: 5px;
         }
-          .b-card h5{
-              padding-top: 10px;
-              text-align: center;
-            }
-            .b-card h5{
+        .b-card h5{
+            padding-top: 10px;
+            text-align: center;
+        }
+        .b-card h5{
             font-family: "Poppins", sans-serif;
             font-weight: 300;
             font-style: normal;
         }
-          .b-card p{
-              text-align: center;
-              transition: 0.5s;
-            }
-            .b-card p:hover{
-                color: var(--bold-red);
-            }
+        .b-card p{
+            text-align: center;
+            transition: 0.5s;
+        }
+        .b-card p:hover{
+            color: var(--bold-red);
+        }
             .b-card:hover{
-            transform: translateY(-5px);
-            cursor: pointer;
-          }
-          @media (max-width:800px) {
-            .bloging{
-                flex-direction: column;
-                align-items: center;
+                transform: translateY(-5px);
+                cursor: pointer;
+            }
+            @media (max-width:800px) {
+                .bloging{
+                    flex-direction: column;
+                    align-items: center;
                 justify-content: center;
             }
             .b-card{
-              width: calc(100% - 40px);
-              margin-bottom: 20px;
-              margin-top: 0;
-              height: auto;
+                width: calc(100% - 40px);
+                margin-bottom: 20px;
+                margin-top: 0;
+                height: auto;
             }
         }
         /* blog */
+        
+        /* contact us */
 
-        /* contact us */
-        .contact{
-            margin: auto;
-            padding: 20px;
-            max-width: 700px;
-            border: 1px solid #000;
-            background-color: transparent;
-            overflow: hidden;
-            flex-wrap: wrap;
-        }
-        .contact h2{
-            padding: 0;
-            margin: 0;
-            text-align: left;
-            font-size: 50px;
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            font-style: normal;
-        }
-        .contact h2::before {
-            display: none;
-        }
-        .contact p{
-            font-family: "Poppins", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-        #name{
-            width: 500px;
-            height: 30px;
-            margin-bottom: 10px;
-        }
-        #email{
-            margin-bottom: 10px;
-            width: 500px;
-            height: 30px;
-        }
-        #message{
-            margin-bottom: 10px;
-            width: 500px;
-            height: 50px;
-        }
-        @media (max-width:900px) {
-            .contact{
-                flex-wrap: wrap;
-            }
-            .contact #name{
-                width: 200px;
-            }
-            .contact #email{
-                width: 200px;
-            }
-            .contact #message{
-                width: 200px;
-            }
-        }
-        /* contact us */
+        .contact-card {
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 800px;
+                    background: transparent;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    margin: auto;
+                    margin-top: 80px;
+                    margin-bottom: 80px;
+                }
+                
+                  .contact-left {
+                      background: var(--bold-red);
+                      color: white;
+                      padding: 20px;
+                      flex: 1 1 300px;
+                      text-align: left;
+                    }
+                    
+                    .contact-left h2 {
+                        text-align: left;
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 600;
+                        font-size: 50px;
+                        font-style: normal;
+                        margin-bottom: 10px;
+                        color: var(--button-color);
+                        padding: 0;
+                    }
+                    .contact-left h2::before {
+                        display: none;
+                    }
+                    
+                    .contact-left p {
+                        margin-bottom: 20px;
+                        color: var(--button-color);
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 300;
+                        font-size: 18px;
+                        font-style: normal;
+                    }
+                    .contact-left .icons{
+                        color: var(--button-color);
+                        font-family: "Poppins", sans-serif;
+                        font-weight: 300;
+                        font-size: 18px;
+                        font-style: normal;
+                }
+                .contact-left .icons i {
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    display: inline-block;
+                    color: var(--button-color);
+                  }
+                  
+                  .contact-right {
+                    flex: 1 1 300px;
+                    padding: 20px;
+                    /* background: rgba(255, 255, 255, 0.8); */
+                    background: transparent;
+                }
+                
+                .contact-right form {
+                    display: flex;
+                    flex-direction: column;
+                    background: transparent;
+                }
+                
+                .contact-right input,
+                .contact-right textarea {
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    /* border-radius: 5px; */
+                    background: transparent;
+                    outline: none;
+                    font-size: 16px;
+                    color: var(--text-color);
+                  }
+                  
+                  .contact-right button {
+                    padding: 10px;
+                    background: var(--bold-red);
+                    color: var(--button-color);
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition:0.5s;
+                  }
+                  
+                  .contact-right button:hover {
+                    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+                  }
+                  
+                  @media (max-width: 600px) {
+                    .contact-card {
+                      flex-direction: column;
+                    }
+                  
+                    .contact-left, .contact-right {
+                      flex: 1 1 100%;
+                    }
+                  }
+            /* contact us */
