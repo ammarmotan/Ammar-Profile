@@ -2,366 +2,324 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profilo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- Font Awesome -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
-/>
-<!-- Google Fonts -->
-<link
-  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-  rel="stylesheet"
-/>
-<!-- MDB -->
-<link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
-  rel="stylesheet"
-/>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profilo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span>A</span>mmar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span><i class="fa-solid fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#project">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                    <button class="toggle-dark-mode" onclick="toggleDarkMode()">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span>A</span>mmar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <button class="toggle-dark-mode" onclick="toggleDarkMode()">
+            <i class="fas fa-moon"></i>
+          </button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
 
-    <!-- Banner -->
-    <div class="banner">
-        <div class="content">
-            <h5>Hello, I'm</h5>
-            <h2>Ammar Motan</h2>
-            <div class="type-container">
-                <span id="typing-text"></span>
-            </div>
-            <a href="Ammar Motan Resume.pdf" download=""><button>Download Cv</button></a>
-        </div>
-        <img src="./images/round-ban.png" alt="" class="round">
-        <div class="img">
-            <img src="./images/for-web.jpeg" alt="">
-        </div>
-        <!-- <h2 class="rotate">Full Stack Developer</h2> -->
+  <!-- Banner -->
+  <div class="banner">
+    <div class="content">
+      <h5>Hello, I'm</h5>
+      <h2>Ammar Motan</h2>
+      <div class="type-container">
+        <span id="typing-text"></span>
+      </div>
+      <a href="Ammar Motan Resume.pdf" download=""><button>Download Cv</button></a>
+    </div>
+    <img src="./images/round-ban.png" alt="" class="round">
+    <div class="img">
+      <img src="./images/for-web.jpeg" alt="">
+    </div>
+    <!-- <h2 class="rotate">Full Stack Developer</h2> -->
 
+  </div><br><br><br>
+  <!-- Banner -->
+
+  <!-- about -->
+  <div class="about" id="about">
+    <h2>ABOUT ME</h2>
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+    <div class="about-card">
+      <div class="img">
+        <!-- <img src="/images/full-pic.jpeg" alt=""> -->
+      </div>
+      <div class="about-content">
+        <h1>Hi There! I'm a Developer</h1>
+        <h3>Full Stack Developer</h3>
+        <p class="para">I am a skilled web developer with 1 year of freelance experience, possessing strong
+          expertise in HTML, CSS, JavaScript, PHP, and Laravel.</p>
+        <h4><span class="h4-head">DOB</span> <span>: 5/7/2007</span></h4>
+        <h4><span class="h4-head">Phone</span> <span>: +92 3363072733</span></h4>
+        <h4><span class="h4-head">Email</span> <span>: ammarmotan1999@gmail.com</span></h4>
+        <h4><span class="h4-head">From</span> <span>: Karachi</span></h4>
+        <h4><span class="h4-head">Language</span> <span>: English , Urdu</span></h4>
+        <h4><span class="h4-head">Freelance</span> <span>: Available</span></h4>
+        <a href="Ammar Motan Resume.pdf" download=""><Button>Download Cv</Button></a>
+      </div>
     </div><br><br><br>
-    <!-- Banner -->
-
     <!-- about -->
-    <div class="about" id="about">
-        <h2>ABOUT ME</h2>
-        <div class="parent">
-            <div class="child"></div>
-        </div>
-        <div class="about-card">
-            <div class="img">
-                <!-- <img src="/images/full-pic.jpeg" alt=""> -->
-            </div>
-            <div class="about-content">
-                <h1>Hi There! I'm a Developer</h1>
-                <h3>Full Stack Developer</h3>
-                <p class="para">I am a skilled web developer with 1 year of freelance experience, possessing strong
-                    expertise in HTML, CSS, JavaScript, PHP, and Laravel.</p>
-                <h4><span class="h4-head">DOB</span> <span>: 5/7/2007</span></h4>
-                <h4><span class="h4-head">Phone</span> <span>: +92 3363072733</span></h4>
-                <h4><span class="h4-head">Email</span> <span>: ammarmotan1999@gmail.com</span></h4>
-                <h4><span class="h4-head">From</span> <span>: Karachi</span></h4>
-                <h4><span class="h4-head">Language</span> <span>: English , Urdu</span></h4>
-                <h4><span class="h4-head">Freelance</span> <span>: Available</span></h4>
-                <a href="Ammar Motan Resume.pdf" download=""><Button>Download Cv</Button></a>
-            </div>
-        </div><br><br><br>
-        <!-- about -->
 
-        <!-- services -->
-        <div class="service" id="service">
-            <h2>What Services we Provide?</h2>
-            <div class="parent">
-                <div class="child"></div>
-            </div><br><br>
-            <div class="main">
-                <div class="box1">
-                    <div class="ico">
-                        <i class="fab fa-wordpress"></i>
-                    </div>
-                    <h2>WordPress Developer</h2>
-                    <p>Professional WordPress development tailored to create dynamic, user-friendly, and responsive
-                        websites that elevate your online presence.</p>
-                    </div>
-                    <div class="box2">
-                        <div class="ico">
-                            <i class="fas fa-code"></i>
-                    </div>
-                    <h2>Front-End Developer</h2>
-                    <p>Crafting visually stunning, responsive, and user-centric front-end designs that bring your ideas
-                        to life on the web.</p>
-                    </div>
-                    <div class="box3">
-                        <div class="ico">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h2>Back-End Developer</h2>
-                    <p>Delivering efficient and scalable backend solutions using PHP and Laravel to power your
-                        applications.</p>
-                    </div>
-                </div>
-            </div><br><br><br>
-            <!-- services -->
-            
-            <!-- skill -->
-            <section class="skills-section" id="skill">
-                <h2 class="section-title">My Skills</h2>
-                <div class="parent">
-                    <div class="child"></div>
-                </div>
-                <div class="skills-container">
-              <div class="skill">
-                  <h3>HTML</h3>
-                  <div class="skill-bar">
-                      <div class="progress" style="width: 95%;"></div>
-                    </div>
-                    <span>95%</span>
-                </div>
-                <div class="skill">
-                    <h3>CSS</h3>
-                <div class="skill-bar">
-                  <div class="progress" style="width: 85%;"></div>
-                </div>
-                <span>85%</span>
-              </div>
-              <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="skill-bar">
-                  <div class="progress" style="width: 60%;"></div>
-                </div>
-                <span>60%</span>
-              </div>
-              <div class="skill">
-                <h3>PHP</h3>
-                <div class="skill-bar">
-                  <div class="progress" style="width: 85%;"></div>
-                </div>
-                <span>85%</span>
-              </div>
-              <div class="skill">
-                <h3>ASP. NET</h3>
-                <div class="skill-bar">
-                  <div class="progress" style="width: 55%;"></div>
-                </div>
-                <span>55%</span>
-              </div>
-            </div>
-          </section><br><br><br>
-        <!-- skill -->
-
-        <!-- project -->
-        <div class="project" id="project">
-            <!-- <h5>Portfolio</h5> -->
-            <span>Portfolio</span>
-            <h2>My Amazing Work</h2>
-            <div class="parent">
-                <div class="child"></div>
-            </div>
-        <div class="port">
-            <div class="portfolio1 portfolio">
-                <img src="./images/festo ss.PNG" alt="">
-                <a href="https://ammarmotan.github.io/festival/home.html" target="blank"><button>Live Preview</button></a>
-            </div>
-            <div class="portfolio2 portfolio">
-                <img src="./images/Restaurant ss.PNG" alt="">
-                <a href="https://ammarmotan.github.io/project/" target="blank"><button>Live Preview</button></a>
-            </div>
-            <div class="portfolio3 portfolio">
-                <img src="./images/weather ss.PNG" alt="">
-                <a href="https://ammarmotan.github.io/Weather-App/" target="blank"><button>Live Preview</button></a>
-            </div>
-            <div class="portfolio4 portfolio">
-                <img src="./images/movie ss.PNG" alt="">
-                <a href=""><button>Live Preview</button></a>
-            </div>
-        </div>
-        <br><br><br> 
-        <!-- project -->
-
-        <!-- Blog -->
-         <div class="blog">
-            <h2>Blogs</h2>
-            <div class="parent"><div class="child"></div></div>
-            <div class="bloging">
-                <div class="b-card" id="pro">
-                    <img src="./images/ai.jpg" alt="">
-                    <h5>Artificial Intelligence</h5>
-                    <p>AI transforms industries, driving innovation, automation, and efficiency through intelligent algorithms, machine learning, and data analysis, reshaping our future.</p>
-                </div>
-                <div class="b-card" id="pro">
-                    <img src="./images/computer.jpg" alt="">
-                    <h5>Information Technology</h5>
-                    <p>IT empowers businesses with advanced technology, streamlining operations, enhancing security, and fostering innovation through efficient data management and connectivity.</p>
-                </div>
-                <div class="b-card" id="pro">
-                    <img src="./images/job.jpg" alt="">
-                    <h5>IT Jobs</h5>
-                    <p>IT jobs offer dynamic opportunities in software development, cybersecurity, data analysis, and network management, driving technological advancements and innovation.</p>
-                </div>
-                </div>
-         </div><br><br><br>
-        <!-- Blog -->
-
-        <!-- contact us -->
-        <div class="contact-card" id="contact">
-            <div class="contact-left">
-              <h2>Contact Us</h2>
-              <p>We'd love to hear from you!</p>
-              <div class="icons">
-                <i class="fas fa-phone"></i> +123 456 7890<br>
-                <i class="fas fa-envelope"></i> contact@example.com<br>
-                <i class="fas fa-map-marker-alt"></i> 123 Street, City
-              </div>
-            </div>
-            <div class="contact-right">
-              <form id="form">
-                <input type="text" id="from_name" name="from_name" placeholder="Name" required>
-                <input type="email" id="email_id" name="email_id" placeholder="Email" required>
-                <textarea placeholder="Message" id="message" name="message" rows="4" required></textarea>
-                <button type="submit" onclick="click()" id="button">Send Message</button>
-              </form>
-            </div>
+    <!-- services -->
+    <div class="service" id="service">
+      <h2>What Services we Provide?</h2>
+      <div class="parent">
+        <div class="child"></div>
+      </div><br><br>
+      <div class="main">
+        <div class="box1">
+          <div class="ico">
+            <i class="fab fa-wordpress"></i>
           </div>
-    <!-- contact us -->
-    
-    <footer class="text-center" style="background-color: transparent;">
+          <h2>WordPress Developer</h2>
+          <p>Professional WordPress development tailored to create dynamic, user-friendly, and responsive
+            websites that elevate your online presence.</p>
+        </div>
+        <div class="box2">
+          <div class="ico">
+            <i class="fas fa-code"></i>
+          </div>
+          <h2>Front-End Developer</h2>
+          <p>Crafting visually stunning, responsive, and user-centric front-end designs that bring your ideas
+            to life on the web.</p>
+        </div>
+        <div class="box3">
+          <div class="ico">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2>Back-End Developer</h2>
+          <p>Delivering efficient and scalable backend solutions using PHP and Laravel to power your
+            applications.</p>
+        </div>
+      </div>
+    </div><br><br><br>
+    <!-- services -->
+
+    <!-- skill -->
+    <section class="skills-section" id="skill">
+      <h2 class="section-title">My Skills</h2>
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="skill-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+          <span>95%</span>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+          <span>85%</span>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+          <span>60%</span>
+        </div>
+        <div class="skill">
+          <h3>PHP</h3>
+          <div class="skill-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+          <span>85%</span>
+        </div>
+        <div class="skill">
+          <h3>ASP. NET</h3>
+          <div class="skill-bar">
+            <div class="progress" style="width: 55%;"></div>
+          </div>
+          <span>55%</span>
+        </div>
+      </div>
+    </section><br><br><br>
+    <!-- skill -->
+
+    <!-- project -->
+    <div class="project" id="project">
+      <!-- <h5>Portfolio</h5> -->
+      <span>Portfolio</span>
+      <h2>My Amazing Work</h2>
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+      <div class="port">
+        <div class="portfolio1 portfolio">
+          <img src="./images/festo ss.PNG" alt="">
+          <a href="https://ammarmotan.github.io/festival/home.html" target="blank"><button>Live Preview</button></a>
+        </div>
+        <div class="portfolio2 portfolio">
+          <img src="./images/Restaurant ss.PNG" alt="">
+          <a href="https://ammarmotan.github.io/project/" target="blank"><button>Live Preview</button></a>
+        </div>
+        <div class="portfolio3 portfolio">
+          <img src="./images/weather ss.PNG" alt="">
+          <a href="https://ammarmotan.github.io/Weather-App/" target="blank"><button>Live Preview</button></a>
+        </div>
+        <div class="portfolio4 portfolio">
+          <img src="./images/movie ss.PNG" alt="">
+          <a href=""><button>Live Preview</button></a>
+        </div>
+      </div>
+      <br><br><br>
+      <!-- project -->
+
+      <!-- Blog -->
+      <div class="blog">
+        <h2>Blogs</h2>
+        <div class="parent">
+          <div class="child"></div>
+        </div>
+        <div class="bloging">
+          <div class="b-card" id="pro">
+            <img src="./images/ai.jpg" alt="">
+            <h5>Artificial Intelligence</h5>
+            <p>AI transforms industries, driving innovation, automation, and efficiency through intelligent algorithms,
+              machine learning, and data analysis, reshaping our future.</p>
+          </div>
+          <div class="b-card" id="pro">
+            <img src="./images/computer.jpg" alt="">
+            <h5>Information Technology</h5>
+            <p>IT empowers businesses with advanced technology, streamlining operations, enhancing security, and
+              fostering innovation through efficient data management and connectivity.</p>
+          </div>
+          <div class="b-card" id="pro">
+            <img src="./images/job.jpg" alt="">
+            <h5>IT Jobs</h5>
+            <p>IT jobs offer dynamic opportunities in software development, cybersecurity, data analysis, and network
+              management, driving technological advancements and innovation.</p>
+          </div>
+        </div>
+      </div><br><br><br>
+      <!-- Blog -->
+
+      <!-- contact us -->
+      <div class="contact-card" id="contact">
+        <div class="contact-left">
+          <h2>Contact Us</h2>
+          <p>We'd love to hear from you!</p>
+          <div class="icons">
+            <i class="fas fa-phone"></i> +123 456 7890<br>
+            <i class="fas fa-envelope"></i> contact@example.com<br>
+            <i class="fas fa-map-marker-alt"></i> 123 Street, City
+          </div>
+        </div>
+        <div class="contact-right">
+          <form id="form">
+            <input type="text" id="from_name" name="from_name" placeholder="Name" required>
+            <input type="email" id="email_id" name="email_id" placeholder="Email" required>
+            <textarea placeholder="Message" id="message" name="message" rows="4" required></textarea>
+            <button type="submit" onclick="click()" id="button">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <!-- contact us -->
+
+      <footer class="text-center" style="background-color: transparent;">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-              <section class="mb-4">
-                <!-- Facebook -->
-                <a
-                data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #3b5998;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-          
-                <!-- Twitter -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #55acee;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-          
-                <!-- Google -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #dd4b39;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-google"></i
-                ></a>
-          
-                <!-- Instagram -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #ac2bac;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-          
-                <!-- Linkedin -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #0082ca;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <!-- Github -->
-                <a
-                  data-mdb-ripple-init
-                  class="btn text-white btn-floating m-1"
-                  style="background-color: #333333;"
-                  href="#!"
-                  role="button"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </section>
-              <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
-          
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-              © 2024 Copyright:
-              <!-- <a class="text-body" href="#">MDBootstrap.com</a> -->
-            </div>
-            <!-- Copyright -->
-          </footer>
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!"
+              role="button"><i class="fab fa-facebook-f"></i></a>
 
-<!-- MDB -->
-<script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"
-></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-      
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!"
+              role="button"><i class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+              role="button"><i class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+              role="button"><i class="fab fa-instagram"></i></a>
+
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!"
+              role="button"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!"
+              role="button"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <!-- <a class="text-body" href="#">MDBootstrap.com</a> -->
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <!-- MDB -->
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
       <script type="text/javascript">
         emailjs.init('A_WfTHegWb0C6gwr_')
       </script>
-        <script src="./js/index.js"></script>
+      <script src="js/index.js"></script>
 
 </body>
 
